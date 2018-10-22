@@ -1,0 +1,11 @@
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\bin\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.deps.json
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\bin\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.runtimeconfig.json
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\bin\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.runtimeconfig.dev.json
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\bin\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.dll
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\bin\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.pdb
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\obj\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.csprojAssemblyReference.cache
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\obj\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\obj\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.AssemblyInfoInputs.cache
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\obj\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.AssemblyInfo.cs
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\obj\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.dll
+C:\Users\clee\Source\Repos\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp\obj\Debug\netcoreapp2.1\Kata_MarsRover_CSharp.pdb
