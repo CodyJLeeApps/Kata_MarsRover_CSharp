@@ -1,0 +1,2 @@
+C:\Users\clee\Documents\Projects\kata\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp_Tests\obj\Debug\Kata_MarsRover_CSharp_Tests.csprojAssemblyReference.cache
+C:\Users\clee\Documents\Projects\kata\Kata_MarsRover_CSharp\Kata_MarsRover_CSharp_Tests\obj\Debug\Kata_MarsRover_CSharp_Tests.csproj.CoreCompileInputs.cache
