@@ -12,12 +12,6 @@ namespace Kata_MarsRover_CSharp.Components
         public int Y { get; private set; }
         public Direction Direction { get; private set; }
 
-        public Rover(int x, int y)
-        {
-            X = x;
-            Y = y;
-        }
-
         public Rover(int x, int y, Direction direction)
         {
             X = x;

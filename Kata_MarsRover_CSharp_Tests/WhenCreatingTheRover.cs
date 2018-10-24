@@ -11,7 +11,8 @@ namespace Kata_MarsRover_CSharp_Tests
     [TestClass]
     public class WhenCreatingTheRover
     {
-
+        // Re-factoring to remove this test method due to the constructor not being needed.
+        /*
         [TestMethod]
         public void WithLocationThenTheRoverIsGeneratedAtTheDefaultLocation()
         {
@@ -20,9 +21,10 @@ namespace Kata_MarsRover_CSharp_Tests
             Assert.AreEqual(0, rover.X);
             Assert.AreEqual(0, rover.Y);
         }
+        */
 
         [TestMethod]
-        public void WithLocationAndDirectionThenTheRoverIsGeneratedAtTheDefaultLocationWithProperDirection()
+        public void WithLocationAndDirectionThenTheRoverIsGeneratedAtTheLocationWithProperDirection()
         {
             Rover rover = new Rover(0, 0, Direction.North);
 
