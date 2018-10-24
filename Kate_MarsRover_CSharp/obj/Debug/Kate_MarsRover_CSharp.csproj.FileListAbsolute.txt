@@ -1,6 +1,0 @@
-C:\Users\clee\Documents\Projects\kata\Kata_MarsRover_CSharp\Kate_MarsRover_CSharp\bin\Debug\Kate_MarsRover_CSharp.exe.config
-C:\Users\clee\Documents\Projects\kata\Kata_MarsRover_CSharp\Kate_MarsRover_CSharp\bin\Debug\Kate_MarsRover_CSharp.exe
-C:\Users\clee\Documents\Projects\kata\Kata_MarsRover_CSharp\Kate_MarsRover_CSharp\bin\Debug\Kate_MarsRover_CSharp.pdb
-C:\Users\clee\Documents\Projects\kata\Kata_MarsRover_CSharp\Kate_MarsRover_CSharp\obj\Debug\Kate_MarsRover_CSharp.csproj.CoreCompileInputs.cache
-C:\Users\clee\Documents\Projects\kata\Kata_MarsRover_CSharp\Kate_MarsRover_CSharp\obj\Debug\Kate_MarsRover_CSharp.exe
-C:\Users\clee\Documents\Projects\kata\Kata_MarsRover_CSharp\Kate_MarsRover_CSharp\obj\Debug\Kate_MarsRover_CSharp.pdb

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.7.2": {
+    ".NETFramework,Version=v4.6.1": {
       "MSTest.TestAdapter/1.3.2": {
         "type": "package",
         "build": {
@@ -20,17 +20,17 @@
           "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
         }
       },
-      "Kate_MarsRover_CSharp/1.0.0": {
+      "Kata_MarsRover_CSharp/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/Kate_MarsRover_CSharp.dll": {}
+          "bin/placeholder/Kata_MarsRover_CSharp.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Kate_MarsRover_CSharp.dll": {}
+          "bin/placeholder/Kata_MarsRover_CSharp.dll": {}
         }
       }
     },
-    ".NETFramework,Version=v4.7.2/win": {
+    ".NETFramework,Version=v4.6.1/win": {
       "MSTest.TestAdapter/1.3.2": {
         "type": "package",
         "build": {
@@ -49,17 +49,17 @@
           "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
         }
       },
-      "Kate_MarsRover_CSharp/1.0.0": {
+      "Kata_MarsRover_CSharp/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/Kate_MarsRover_CSharp.dll": {}
+          "bin/placeholder/Kata_MarsRover_CSharp.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Kate_MarsRover_CSharp.dll": {}
+          "bin/placeholder/Kata_MarsRover_CSharp.dll": {}
         }
       }
     },
-    ".NETFramework,Version=v4.7.2/win-x64": {
+    ".NETFramework,Version=v4.6.1/win-x64": {
       "MSTest.TestAdapter/1.3.2": {
         "type": "package",
         "build": {
@@ -78,17 +78,17 @@
           "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
         }
       },
-      "Kate_MarsRover_CSharp/1.0.0": {
+      "Kata_MarsRover_CSharp/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/Kate_MarsRover_CSharp.dll": {}
+          "bin/placeholder/Kata_MarsRover_CSharp.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Kate_MarsRover_CSharp.dll": {}
+          "bin/placeholder/Kata_MarsRover_CSharp.dll": {}
         }
       }
     },
-    ".NETFramework,Version=v4.7.2/win-x86": {
+    ".NETFramework,Version=v4.6.1/win-x86": {
       "MSTest.TestAdapter/1.3.2": {
         "type": "package",
         "build": {
@@ -107,13 +107,13 @@
           "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {}
         }
       },
-      "Kate_MarsRover_CSharp/1.0.0": {
+      "Kata_MarsRover_CSharp/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/Kate_MarsRover_CSharp.dll": {}
+          "bin/placeholder/Kata_MarsRover_CSharp.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Kate_MarsRover_CSharp.dll": {}
+          "bin/placeholder/Kata_MarsRover_CSharp.dll": {}
         }
       }
     }
@@ -279,15 +279,15 @@
         "mstest.testframework.nuspec"
       ]
     },
-    "Kate_MarsRover_CSharp/1.0.0": {
+    "Kata_MarsRover_CSharp/1.0.0": {
       "type": "project",
-      "path": "../Kate_MarsRover_CSharp/Kate_MarsRover_CSharp.csproj",
-      "msbuildProject": "../Kate_MarsRover_CSharp/Kate_MarsRover_CSharp.csproj"
+      "path": "../Kata_MarsRover_CSharp/Kata_MarsRover_CSharp.csproj",
+      "msbuildProject": "../Kata_MarsRover_CSharp/Kata_MarsRover_CSharp.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.7.2": [
-      "Kate_MarsRover_CSharp >= 1.0.0",
+    ".NETFramework,Version=v4.6.1": [
+      "Kata_MarsRover_CSharp >= 1.0.0",
       "MSTest.TestAdapter >= 1.3.2",
       "MSTest.TestFramework >= 1.3.2"
     ]
@@ -311,7 +311,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net472"
+        "net461"
       ],
       "sources": {
         "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
@@ -319,17 +319,17 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net472": {
+        "net461": {
           "projectReferences": {
-            "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kate_MarsRover_CSharp\\Kate_MarsRover_CSharp.csproj": {
-              "projectPath": "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kate_MarsRover_CSharp\\Kate_MarsRover_CSharp.csproj"
+            "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp.csproj": {
+              "projectPath": "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "net472": {
+      "net461": {
         "dependencies": {
           "MSTest.TestAdapter": {
             "target": "Package",
