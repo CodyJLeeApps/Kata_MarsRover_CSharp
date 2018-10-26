@@ -33,10 +33,16 @@ namespace Kata_MarsRover_CSharp.Domain
                     X += 1;
                     break;
                 case Direction.West:
+                    X -= 1;
                     break;
                 default:
                     break;
             }
+        }
+
+        public override string ToString()
+        {
+            return $"({X},{Y}) facing {Direction}";
         }
 
         public override bool Equals(object obj)
