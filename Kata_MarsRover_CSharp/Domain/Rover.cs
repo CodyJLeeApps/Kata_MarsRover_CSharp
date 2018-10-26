@@ -40,6 +40,11 @@ namespace Kata_MarsRover_CSharp.Domain
             }
         }
 
+        public void MoveBackward()
+        {
+            Y -= 1;
+        }
+
         public override string ToString()
         {
             return $"({X},{Y}) facing {Direction}";
