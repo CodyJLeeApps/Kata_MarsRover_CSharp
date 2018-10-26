@@ -42,7 +42,21 @@ namespace Kata_MarsRover_CSharp.Domain
 
         public void MoveBackward()
         {
-            Y -= 1;
+            switch (Direction)
+            {
+                case Direction.North:
+                    Y -= 1;
+                    break;
+                case Direction.South:
+                    Y += 1;
+                    break;
+                case Direction.East:
+                    break;
+                case Direction.West:
+                    break;
+                default:
+                    break;
+            }
         }
 
         public override string ToString()
