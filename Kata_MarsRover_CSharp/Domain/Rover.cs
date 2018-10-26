@@ -19,5 +19,38 @@ namespace Kata_MarsRover_CSharp.Domain
             Direction = direction;
         }
 
+        public void MoveForward()
+        {
+            Y = 1;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            
+            if(!(obj is Rover))
+            {
+                return false;
+            }
+
+            return Equals((Rover)obj);
+        }
+
+        private bool Equals(Rover rover)
+        {
+            return rover.X == X && rover.Y == Y;
+        }
+
+        public override int GetHashCode()
+        {
+            var hashCode = 1861411795;
+            hashCode = hashCode * -1521134295 + X.GetHashCode();
+            hashCode = hashCode * -1521134295 + Y.GetHashCode();
+            return hashCode;
+        }
+
     }
 }
