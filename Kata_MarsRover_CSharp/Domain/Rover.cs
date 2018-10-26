@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kata_MarsRover_CSharp.Components
+namespace Kata_MarsRover_CSharp.Domain
 {
     public class Rover
     {
