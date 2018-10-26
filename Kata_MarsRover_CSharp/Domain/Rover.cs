@@ -61,6 +61,11 @@ namespace Kata_MarsRover_CSharp.Domain
             }
         }
 
+        public void TurnRight()
+        {
+            Direction = Direction.East;
+        }
+
         public override string ToString()
         {
             return $"({X},{Y}) facing {Direction}";
