@@ -30,6 +30,7 @@ namespace Kata_MarsRover_CSharp.Domain
                     Y -= 1;
                     break;
                 case Direction.East:
+                    X += 1;
                     break;
                 case Direction.West:
                     break;

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Kata_MarsRover_CSharp_Tests.RoverTests
 {
     [TestClass]
-    public class WhenMovingTheRover
+    public class WhenMovingTheRoverForward
     {
 
         [TestMethod]
@@ -31,6 +31,17 @@ namespace Kata_MarsRover_CSharp_Tests.RoverTests
             rover.MoveForward();
 
             Rover expectedRover = new Rover(0, -1, Direction.South);
+            Assert.AreEqual(expectedRover, rover);
+        }
+
+        [TestMethod]
+        public void WhileFacingEastThenTheRoverMovesOneUnitInThePositiveXDirection()
+        {
+            Rover rover = new Rover(0, 0, Direction.East);
+
+            rover.MoveForward();
+
+            Rover expectedRover = new Rover(1, 0, Direction.East);
             Assert.AreEqual(expectedRover, rover);
         }
 

@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoverTests\WhenCreatingTheRover.cs" />
-    <Compile Include="RoverTests\WhenMovingTheRover.cs" />
+    <Compile Include="RoverTests\WhenMovingTheRoverForward.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter">
