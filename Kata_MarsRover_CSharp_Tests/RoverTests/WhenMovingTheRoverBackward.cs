@@ -14,24 +14,17 @@ namespace Kata_MarsRover_CSharp_Tests.RoverTests
     {
 
         [TestMethod]
-        public void WhileFacingInTheNorthDirectionThenTheRoverMovesOneUnitInTheNegativeYDirection()
+        [DataRow(0, -1, Direction.North, DisplayName = "WhileFacingInTheNorthDirectionThenTheRoverMovesOneUnitInTheNegativeYDirection")]
+        [DataRow(0, 1, Direction.South, DisplayName = "WhileFacingInTheSouthDirectionThenTheRoverMovesOneUnitInThePositiveYDirection")]
+        [DataRow(-1, 0, Direction.East, DisplayName = "WhileFacingInTheEastDirectionThenTheRoverMovesOneUnitInThePositiveXDirection")]
+        [DataRow(1, 0, Direction.West, DisplayName = "WhileFacingInTheWestDirectionThenTheRoverMovesOneUnitInThePositiveYDirection")]
+        public void TheRoverMovesBackwardByOneUnitInTheProperDirection(int ExpectedX, int expectedY, Direction direction)
         {
-            Rover rover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.North);
+            Rover rover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(direction);
 
             rover.MoveBackward();
 
-            Rover expectedRover = new Rover(0, -1, Direction.North);
-            Assert.AreEqual(expectedRover, rover);
-        }
-
-        [TestMethod]
-        public void WhileFacingInTheSouthDirectionThenTheRoverMovesOneUnitInThePositiveYDirection()
-        {
-            Rover rover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.South);
-
-            rover.MoveBackward();
-
-            Rover expectedRover = new Rover(0, 1, Direction.South);
+            Rover expectedRover = new Rover(ExpectedX, expectedY, direction);
             Assert.AreEqual(expectedRover, rover);
         }
 
