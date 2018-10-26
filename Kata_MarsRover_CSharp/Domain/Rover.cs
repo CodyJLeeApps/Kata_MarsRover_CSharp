@@ -21,7 +21,21 @@ namespace Kata_MarsRover_CSharp.Domain
 
         public void MoveForward()
         {
-            Y = 1;
+            switch (Direction)
+            {
+                case Direction.North:
+                    Y += 1;
+                    break;
+                case Direction.South:
+                    Y -= 1;
+                    break;
+                case Direction.East:
+                    break;
+                case Direction.West:
+                    break;
+                default:
+                    break;
+            }
         }
 
         public override bool Equals(object obj)

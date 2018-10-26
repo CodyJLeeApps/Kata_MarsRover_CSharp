@@ -13,13 +13,24 @@ namespace Kata_MarsRover_CSharp_Tests.RoverTests
     {
 
         [TestMethod]
-        public void WhileFacingNorthTheRoverMovesOneUnitInThePositiveNorthDirection()
+        public void WhileFacingNorthThenTheRoverMovesOneUnitInThePositiveYDirection()
         {
             Rover rover = new Rover(0, 0, Direction.North);
 
             rover.MoveForward();
 
             Rover expectedRover = new Rover(0, 1, Direction.North);
+            Assert.AreEqual(expectedRover, rover);
+        }
+
+        [TestMethod]
+        public void WhileFacingSouthThenTheRoverMovesOneUnitInTheNegativeYDirection()
+        {
+            Rover rover = new Rover(0, 0, Direction.South);
+
+            rover.MoveForward();
+
+            Rover expectedRover = new Rover(0, -1, Direction.South);
             Assert.AreEqual(expectedRover, rover);
         }
 
