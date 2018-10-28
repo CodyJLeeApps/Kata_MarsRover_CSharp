@@ -5,6 +5,10 @@
 .vs/
 .vs/*
 
+obj
+obj/
+obj/*
+
 # User-specific files
 *.suo
 *.user

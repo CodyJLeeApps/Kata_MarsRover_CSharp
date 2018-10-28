@@ -63,7 +63,21 @@ namespace Kata_MarsRover_CSharp.Domain
 
         public void TurnRight()
         {
-            Direction = Direction.East;
+            switch (Direction)
+            {
+                case Direction.North:
+                    Direction = Direction.East;
+                    break;
+                case Direction.South:
+                    break;
+                case Direction.East:
+                    Direction = Direction.South;
+                    break;
+                case Direction.West:
+                    break;
+                default:
+                    break;
+            }
         }
 
         public override string ToString()
@@ -88,7 +102,7 @@ namespace Kata_MarsRover_CSharp.Domain
 
         private bool Equals(Rover rover)
         {
-            return rover.X == X && rover.Y == Y;
+            return rover.X == X && rover.Y == Y && rover.Direction == Direction;
         }
 
         public override int GetHashCode()

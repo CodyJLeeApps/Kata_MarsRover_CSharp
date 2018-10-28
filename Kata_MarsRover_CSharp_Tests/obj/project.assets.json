@@ -120,7 +120,7 @@
   },
   "libraries": {
     "MSTest.TestAdapter/1.3.2": {
-      "sha512": "CuktA7K5T42wPagNRg69mqGFBLbolWcffuQyWxUfx0ZSl2qD73COW+bJVBg73iwPweTkNa6sSRvOvnlCrLQ54g==",
+      "sha512": "Gf3z9oEcQ9+h+c+ZUkeIlhrXkmlvVMcqYwDlGzH0mVcOe4bi+rcIVLZBWDAtw+OjEZ0lOX3eL31VuzY8CQen1Q==",
       "type": "package",
       "path": "mstest.testadapter/1.3.2",
       "files": [
@@ -180,7 +180,7 @@
       ]
     },
     "MSTest.TestFramework/1.3.2": {
-      "sha512": "gPBFq2drAnhGdT3RGYv/OaYdyCYXSvDK1Cm4aMA7o4T1nYBMHOutgcVInrVCq+z+wASKjmkSJ70ajA2+fB7kzQ==",
+      "sha512": "1R4o/wJ5UFQt2c4Nlmor39rMX0d0ByOMVXZwOyhGhh1BQqgj54fuE+yMZ0/e8yEZYVl29PFYfj4cjHB9yKyOmA==",
       "type": "package",
       "path": "mstest.testframework/1.3.2",
       "files": [
@@ -293,36 +293,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\clee\\.nuget\\packages\\": {}
+    "C:\\Users\\cody\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp_Tests\\Kata_MarsRover_CSharp_Tests.csproj",
+      "projectUniqueName": "C:\\Users\\cody\\Documents\\Visual Studio 2017\\Projects\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp_Tests\\Kata_MarsRover_CSharp_Tests.csproj",
       "projectName": "Kata_MarsRover_CSharp_Tests",
-      "projectPath": "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp_Tests\\Kata_MarsRover_CSharp_Tests.csproj",
-      "packagesPath": "C:\\Users\\clee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp_Tests\\obj\\",
+      "projectPath": "C:\\Users\\cody\\Documents\\Visual Studio 2017\\Projects\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp_Tests\\Kata_MarsRover_CSharp_Tests.csproj",
+      "packagesPath": "C:\\Users\\cody\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cody\\Documents\\Visual Studio 2017\\Projects\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp_Tests\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\clee\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+        "C:\\Users\\cody\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net461"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp.csproj": {
-              "projectPath": "C:\\Users\\clee\\Documents\\Projects\\kata\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp.csproj"
+            "C:\\Users\\cody\\Documents\\Visual Studio 2017\\Projects\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp.csproj": {
+              "projectPath": "C:\\Users\\cody\\Documents\\Visual Studio 2017\\Projects\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp\\Kata_MarsRover_CSharp.csproj"
             }
           }
         }
