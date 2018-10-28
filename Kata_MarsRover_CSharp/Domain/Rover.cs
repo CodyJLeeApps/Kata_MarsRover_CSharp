@@ -75,6 +75,7 @@ namespace Kata_MarsRover_CSharp.Domain
                     Direction = Direction.South;
                     break;
                 case Direction.West:
+                    Direction = Direction.North;
                     break;
                 default:
                     break;
