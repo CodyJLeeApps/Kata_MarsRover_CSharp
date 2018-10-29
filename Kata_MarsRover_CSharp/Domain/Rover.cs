@@ -63,22 +63,9 @@ namespace Kata_MarsRover_CSharp.Domain
 
         public void TurnLeft()
         {
-            switch (Direction)
-            {
-                case Direction.North:
-                    Direction = Direction.West;
-                    break;
-                case Direction.South:
-                    Direction = Direction.East;
-                    break;
-                case Direction.East:
-                    break;
-                case Direction.West:
-                    Direction = Direction.South;
-                    break;
-                default:
-                    break;
-            }
+            TurnRight();
+            TurnRight();
+            TurnRight();
         }
 
         public void TurnRight()

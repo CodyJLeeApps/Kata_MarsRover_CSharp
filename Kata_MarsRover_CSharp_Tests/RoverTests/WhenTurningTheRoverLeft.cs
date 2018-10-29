@@ -14,35 +14,17 @@ namespace Kata_MarsRover_CSharp_Tests.RoverTests
     {
 
         [TestMethod]
-        public void AndFacingInTheNorthDirectionThenTheRoverTurnsToFaceInTheEastDirection()
+        [DataRow(Direction.North, Direction.West, DisplayName = "AndFacingInTheNorthDirectionThenTheRoverTurnsToFaceInTheEastDirection")]
+        [DataRow(Direction.West, Direction.South, DisplayName = "AndFacingInTheWestDirectionThenTheRoverTurnsToFaceInTheSouthDirection")]
+        [DataRow(Direction.South, Direction.East, DisplayName = "AndFacingInTheSouthDirectionThenTheRoverTurnsToFaceInTheEastDirection")]
+        [DataRow(Direction.East, Direction.North, DisplayName = "AndFacingInTheEastDirectionThenTheRoverTurnsToFaceInTheNorthDirection")]
+        public void TheRoverTurnsToFaceTheCorrectDirection(Direction startingDirection, Direction expectedDirection)
         {
-            Rover rover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.North);
+            Rover rover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(startingDirection);
 
             rover.TurnLeft();
 
-            Rover expectedRover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.West);
-            Assert.AreEqual(expectedRover, rover);
-        }
-
-        [TestMethod]
-        public void AndFacingInTheWestDirectionThenTheRoverTurnsToFaceInTheSouthDirection()
-        {
-            Rover rover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.West);
-
-            rover.TurnLeft();
-
-            Rover expectedRover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.South);
-            Assert.AreEqual(expectedRover, rover);
-        }
-
-        [TestMethod]
-        public void AndFacingInTheSouthDirectionThenTheRoverTurnsToFaceInTheEastDirection()
-        {
-            Rover rover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.South);
-
-            rover.TurnLeft();
-
-            Rover expectedRover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.East);
+            Rover expectedRover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(expectedDirection);
             Assert.AreEqual(expectedRover, rover);
         }
 
