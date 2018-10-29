@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandTextProcessor.cs" />
+    <Compile Include="Domain\Command.cs" />
     <Compile Include="Domain\Direction.cs" />
     <Compile Include="Domain\Rover.cs" />
     <Compile Include="Program.cs" />
