@@ -47,6 +47,7 @@
     <Compile Include="RoverTests\WhenCreatingTheRover.cs" />
     <Compile Include="RoverTests\WhenMovingTheRoverBackward.cs" />
     <Compile Include="RoverTests\WhenMovingTheRoverForward.cs" />
+    <Compile Include="RoverTests\WhenTurningTheRoverLeft.cs" />
     <Compile Include="RoverTests\WhenTurningTheRoverRight.cs" />
   </ItemGroup>
   <ItemGroup>
