@@ -35,5 +35,16 @@ namespace Kata_MarsRover_CSharp_Tests.RoverTests
             Assert.AreEqual(expectedRover, rover);
         }
 
+        [TestMethod]
+        public void AndFacingInTheSouthDirectionThenTheRoverTurnsToFaceInTheEastDirection()
+        {
+            Rover rover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.South);
+
+            rover.TurnLeft();
+
+            Rover expectedRover = RoverTestFixtures.CreateRoverAtDefaultLocationWithGivenDirection(Direction.East);
+            Assert.AreEqual(expectedRover, rover);
+        }
+
     }
 }
