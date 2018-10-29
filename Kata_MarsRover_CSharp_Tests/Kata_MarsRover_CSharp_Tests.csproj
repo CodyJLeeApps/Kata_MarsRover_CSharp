@@ -42,6 +42,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandControllerTests\WhenSendingCommandsToTheRover.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoverTests\TestFixtures\RoverTestFixtures.cs" />
     <Compile Include="RoverTests\WhenCreatingTheRover.cs" />
