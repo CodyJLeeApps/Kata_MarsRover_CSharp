@@ -15,7 +15,12 @@ namespace Kata_MarsRover_CSharp
             if (textCommand == null)
                 throw new ArgumentNullException(textCommand, $"The argument {nameof(textCommand)} was null!");
 
-            return new Command();
+            Command command = new Command();
+            if(textCommand == "l")
+            {
+                command = Command.TurnLeft;
+            }
+            return command;
         }
 
     }

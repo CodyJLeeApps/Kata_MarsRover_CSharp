@@ -18,7 +18,17 @@ namespace Kata_MarsRover_CSharp_Tests.CommandTextProcessorTests
         {
             CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
 
-            Assert.ThrowsException<ArgumentNullException>(commandTextProcessor.CreateCommandFromText(null));
+            Assert.ThrowsException<ArgumentNullException>(() => commandTextProcessor.CreateCommandFromText(null));
+        }
+
+        [TestMethod]
+        public void WhenTheLowercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned()
+        {
+            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
+
+            Command returnCommand = commandTextProcessor.CreateCommandFromText("l");
+
+            Assert.AreEqual(Command.TurnLeft, returnCommand);
         }
 
     }
