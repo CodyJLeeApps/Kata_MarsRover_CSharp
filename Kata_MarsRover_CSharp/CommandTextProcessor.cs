@@ -23,6 +23,10 @@ namespace Kata_MarsRover_CSharp
                 command = Command.TurnRight;
             else if (lowercaseTextCommand == "f")
                 command = Command.MoveForward;
+            else if (lowercaseTextCommand == "b")
+                command = Command.MoveBackward;
+            else
+                command = Command.Unknown;
             return command;
         }
 

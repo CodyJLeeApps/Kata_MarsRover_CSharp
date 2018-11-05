@@ -61,5 +61,25 @@ namespace Kata_MarsRover_CSharp_Tests.CommandTextProcessorTests
             Assert.AreEqual(Command.MoveForward, returnCommand);
         }
 
+        [TestMethod]
+        public void WhenLowercaseBIsSentToTheTextProcessorTheMoveBackwardCommandIsReturned()
+        {
+            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
+
+            Command returnCommand = commandTextProcessor.CreateCommandFromText("b");
+
+            Assert.AreEqual(Command.MoveBackward, returnCommand);
+        }
+
+        [TestMethod]
+        public void WhenABadInstructionIsSentToTheTextProcessorAnUnknownCommandTypeIsReturned()
+        {
+            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
+
+            Command returnCommand = commandTextProcessor.CreateCommandFromText("XYZ");
+
+            Assert.AreEqual(Command.Unknown, returnCommand);
+        }
+
     }
 }
