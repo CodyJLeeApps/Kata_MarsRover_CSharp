@@ -22,7 +22,7 @@ namespace Kata_MarsRover_CSharp_Tests.CommandTextProcessorTests
         }
 
         [TestMethod]
-        public void WhenTheLowercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned()
+        public void WhenLowercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned()
         {
             CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
 
@@ -32,13 +32,23 @@ namespace Kata_MarsRover_CSharp_Tests.CommandTextProcessorTests
         }
 
         [TestMethod]
-        public void WhenTheUppercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned()
+        public void WhenUppercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned()
         {
             CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
 
             Command returnCommand = commandTextProcessor.CreateCommandFromText("L");
 
             Assert.AreEqual(Command.TurnLeft, returnCommand);
+        }
+
+        [TestMethod]
+        public void WhenLowercaseRIsSentToTheTextProcessorTheTurnRightCommandIsReturned()
+        {
+            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
+
+            Command returnCommand = commandTextProcessor.CreateCommandFromText("r");
+
+            Assert.AreEqual(Command.TurnRight, returnCommand);
         }
 
     }
