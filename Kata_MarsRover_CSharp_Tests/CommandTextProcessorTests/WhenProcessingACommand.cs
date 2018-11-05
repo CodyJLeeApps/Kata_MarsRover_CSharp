@@ -22,74 +22,20 @@ namespace Kata_MarsRover_CSharp_Tests.CommandTextProcessorTests
         }
 
         [TestMethod]
-        public void WhenLowercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned()
+        [DataRow("l", Command.TurnLeft, DisplayName = "WhenLowercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned")]
+        [DataRow("L", Command.TurnLeft, DisplayName = "WhenUppercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned")]
+        [DataRow("r", Command.TurnRight, DisplayName = "WhenLowercaseRIsSentToTheTextProcessorTheTurnRightCommandIsReturned")]
+        [DataRow("f", Command.MoveForward, DisplayName = "WhenLowercaseFIsSentToTheTextProcessorTheMoveForwardCommandIsReturned")]
+        [DataRow("b", Command.MoveBackward, DisplayName = "WhenLowercaseBIsSentToTheTextProcessorTheMoveBackwardCommandIsReturned")]
+        [DataRow("XYZ", Command.Unknown, DisplayName = "WhenABadInstructionIsSentToTheTextProcessorAnUnknownCommandTypeIsReturned")]
+        [DataRow("", Command.Unknown, DisplayName = "WhenNoTextCommandIsSentToTheTextProcessorAnUnknownCommandTypeIsReturned")]
+        public void WhenATextCommandIsSentToTheCommandProcessor(string strCommand, Command expectedCommand)
         {
             CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
 
-            Command returnCommand = commandTextProcessor.CreateCommandFromText("l");
+            Command returnCommand = commandTextProcessor.CreateCommandFromText(strCommand);
 
-            Assert.AreEqual(Command.TurnLeft, returnCommand);
+            Assert.AreEqual(expectedCommand, returnCommand);
         }
-
-        [TestMethod]
-        public void WhenUppercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned()
-        {
-            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
-
-            Command returnCommand = commandTextProcessor.CreateCommandFromText("L");
-
-            Assert.AreEqual(Command.TurnLeft, returnCommand);
-        }
-
-        [TestMethod]
-        public void WhenLowercaseRIsSentToTheTextProcessorTheTurnRightCommandIsReturned()
-        {
-            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
-
-            Command returnCommand = commandTextProcessor.CreateCommandFromText("r");
-
-            Assert.AreEqual(Command.TurnRight, returnCommand);
-        }
-
-        [TestMethod]
-        public void WhenLowercaseFIsSentToTheTextProcessorTheMoveForwardCommandIsReturned()
-        {
-            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
-
-            Command returnCommand = commandTextProcessor.CreateCommandFromText("f");
-
-            Assert.AreEqual(Command.MoveForward, returnCommand);
-        }
-
-        [TestMethod]
-        public void WhenLowercaseBIsSentToTheTextProcessorTheMoveBackwardCommandIsReturned()
-        {
-            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
-
-            Command returnCommand = commandTextProcessor.CreateCommandFromText("b");
-
-            Assert.AreEqual(Command.MoveBackward, returnCommand);
-        }
-
-        [TestMethod]
-        public void WhenABadInstructionIsSentToTheTextProcessorAnUnknownCommandTypeIsReturned()
-        {
-            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
-
-            Command returnCommand = commandTextProcessor.CreateCommandFromText("XYZ");
-
-            Assert.AreEqual(Command.Unknown, returnCommand);
-        }
-
-        [TestMethod]
-        public void WhenNoTextCommandIsSentToTheTextProcessorAnUnknownCommandTypeIsReturned()
-        {
-            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
-
-            Command returnCommand = commandTextProcessor.CreateCommandFromText("");
-
-            Assert.AreEqual(Command.Unknown, returnCommand);
-        }
-
     }
 }
