@@ -81,5 +81,15 @@ namespace Kata_MarsRover_CSharp_Tests.CommandTextProcessorTests
             Assert.AreEqual(Command.Unknown, returnCommand);
         }
 
+        [TestMethod]
+        public void WhenNoTextCommandIsSentToTheTextProcessorAnUnknownCommandTypeIsReturned()
+        {
+            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
+
+            Command returnCommand = commandTextProcessor.CreateCommandFromText("");
+
+            Assert.AreEqual(Command.Unknown, returnCommand);
+        }
+
     }
 }
