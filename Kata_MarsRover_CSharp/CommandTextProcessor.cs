@@ -15,8 +15,9 @@ namespace Kata_MarsRover_CSharp
             if (textCommand == null)
                 throw new ArgumentNullException(textCommand, $"The argument {nameof(textCommand)} was null!");
 
+            string lowercaseTextCommand = textCommand.ToLower();
             Command command = new Command();
-            if(textCommand == "l")
+            if(lowercaseTextCommand == "l")
             {
                 command = Command.TurnLeft;
             }

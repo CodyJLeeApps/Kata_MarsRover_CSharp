@@ -31,5 +31,15 @@ namespace Kata_MarsRover_CSharp_Tests.CommandTextProcessorTests
             Assert.AreEqual(Command.TurnLeft, returnCommand);
         }
 
+        [TestMethod]
+        public void WhenTheUppercaseLIsSentToTheTextProcessorTheTurnLeftCommandIsReturned()
+        {
+            CommandTextProcessor commandTextProcessor = new CommandTextProcessor();
+
+            Command returnCommand = commandTextProcessor.CreateCommandFromText("L");
+
+            Assert.AreEqual(Command.TurnLeft, returnCommand);
+        }
+
     }
 }
