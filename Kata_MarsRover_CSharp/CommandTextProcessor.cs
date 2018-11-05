@@ -18,13 +18,11 @@ namespace Kata_MarsRover_CSharp
             string lowercaseTextCommand = textCommand.ToLower();
             Command command = new Command();
             if (lowercaseTextCommand == "l")
-            {
                 command = Command.TurnLeft;
-            }
             else if (lowercaseTextCommand == "r")
-            {
                 command = Command.TurnRight;
-            }
+            else if (lowercaseTextCommand == "f")
+                command = Command.MoveForward;
             return command;
         }
 
