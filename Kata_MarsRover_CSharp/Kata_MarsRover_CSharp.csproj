@@ -47,6 +47,7 @@
     <Compile Include="Domain\Command.cs" />
     <Compile Include="Domain\Direction.cs" />
     <Compile Include="Domain\Rover.cs" />
+    <Compile Include="FileLogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
